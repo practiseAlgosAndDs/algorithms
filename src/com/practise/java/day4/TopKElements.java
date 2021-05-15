@@ -1,4 +1,4 @@
-package com.practise.java.day3;
+package com.practise.java.day4;
 
 import java.util.HashMap;
 import java.util.PriorityQueue;
