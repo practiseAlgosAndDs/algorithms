@@ -33,22 +33,24 @@ public class MinimumAddToMakeParenthesesValid {
     public int minAddToMakeValidApp2(String s) { // more cleaner approach
         if(s.length()==0) return 0;
         int count =0;
+        //TC O(n), SC L O(n)
         Stack<Character> stack = new Stack<Character>();
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)=='(') {
                 stack.push(s.charAt(i));
             }
-            else if( s.charAt(i)==')'){
-                if(!stack.isEmpty() && stack.peek()=='(') {
-                    stack.pop();
-                }
-                else {
-                    count++;
-                }
+            else if(stack.isEmpty()) {
+                count++;
+                continue;
+            }
+            else {
+                stack.pop();
             }
         }
         return (count+stack.size());
     }
+
+
 
     public static void main(String[] args) {
         MinimumAddToMakeParenthesesValid mAddTMakeParan = new MinimumAddToMakeParenthesesValid();

@@ -32,4 +32,9 @@ public class ValidateStackSequences {
         }
         return true;
     }
+
+    public boolean validateStackSequencesApp2(int[] pushed, int[] popped) {
+
+        return true;
+    }
 }
