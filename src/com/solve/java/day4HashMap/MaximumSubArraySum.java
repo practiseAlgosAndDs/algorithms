@@ -1,6 +1,7 @@
 package com.solve.java.day4HashMap;
 
 // LC 325 Medium https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/
+// similar to 560
 import java.util.HashMap;
 
 //Approach : Using hashmap to store the sum and the index
